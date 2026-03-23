@@ -1,1 +1,1 @@
-console.log("Studio Vit")
+console.log('Studio Vit')
