@@ -13,7 +13,7 @@ export function Header() {
   }
   return (
     <header className='fixed w-full px-4'>
-      <div className="z-[9999] flex h-auto items-center justify-between backdrop-blur-2xl rounded-[30px] bg-zinc-300/80 px-7 py-4 max-md:px-4">
+      <div className="z-[9999] flex h-auto items-center justify-between backdrop-blur-2xl rounded-[30px] bg-zinc-300/80 px-7 py-4 max-md:py-1 max-md:px-4">
         {/* HEADER DESKTOP  */}
 
         <div className="flex w-full items-center justify-between max-md:hidden">
