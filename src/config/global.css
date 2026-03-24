@@ -290,3 +290,41 @@ body {
     gap: 0.5rem;
   }
 }
+
+@keyframes scroll-tags {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-scroll-tags {
+  animation: scroll-tags 10s linear infinite;
+  transition: opacity 0.3s ease;
+}
+
+.animate-scroll-tags:hover {
+  animation-play-state: paused;
+}
+
+@media (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
+}
+
+@media (max-width: 640px) {
+  main {
+    padding: 0;
+  }
+}
+
+@media (max-width: 640px) {
+  section {
+    margin-top: 0;
+    padding-top: 2rem;
+  }
+}
+
