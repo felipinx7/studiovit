@@ -1,8 +1,8 @@
 import type { interfaceClasseIcone } from '../../interfaces/interface-classe-icone'
 
 export function IconeWhatsapp({ className }: interfaceClasseIcone) {
-  {
-    ;<svg
+  return (
+    <svg
       width="41"
       height="41"
       viewBox="0 0 41 41"
@@ -15,5 +15,5 @@ export function IconeWhatsapp({ className }: interfaceClasseIcone) {
         fill="black"
       />
     </svg>
-  }
+  )
 }

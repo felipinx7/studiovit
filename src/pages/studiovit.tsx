@@ -1,9 +1,13 @@
 import { Header } from '../components/layout/header'
 import { LinhaServicos } from '../components/layout/linha-servicos'
+import { Footer } from './sections/footer'
+import { SecaoContato } from './sections/secao-contato'
+import { SecaoElevar } from './sections/secao-elevar'
 import { SecaoEtapa } from './sections/secao-etapa'
 import { SecaoExplorar } from './sections/secao-explorar'
 import { SecaoInicio } from './sections/secao-inicio'
 import { SecaoTrabalho } from './sections/secao-trabalhos'
+import { SectionFaq } from './sections/section-faq'
 
 export function StudioVit() {
   return (
@@ -30,6 +34,18 @@ export function StudioVit() {
       </div>
       <div className="w-full">
         <SecaoEtapa />
+      </div>
+      <div className="w-full">
+        <SectionFaq />
+      </div>
+      <div className="w-full">
+        <SecaoElevar />
+      </div>
+      <div className="w-full">
+        <SecaoContato />
+      </div>
+      <div className='w-full'>
+        <Footer />
       </div>
     </main>
   )
