@@ -3,7 +3,7 @@ import type { InterfaceCardSolucao } from '../../interfaces/interface-card-soluc
 
 export function CardExplorar(props: InterfaceCardSolucao) {
   return (
-    <article className="flex h-[280px] w-full max-w-[400px] flex-col items-center justify-between rounded-[1.1rem] bg-white p-4 shadow-[0px_0px_6px_0px_rgba(255,190,46,0.10)] duration-500 ease-in-out hover:scale-105 md:h-[300px] md:p-7">
+    <article className="flex h-[280px] w-full flex-col items-center justify-between rounded-[1.1rem] bg-white p-4 shadow-[0px_0px_6px_0px_rgba(255,190,46,0.10)] duration-500 ease-in-out hover:scale-105 md:h-[300px] md:p-7">
       {/* container do icone e nome solução  */}
       <div className="flex w-full items-center justify-start gap-3 md:gap-4">
         {/* icone */}

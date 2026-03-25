@@ -1,7 +1,9 @@
 import { Header } from '../components/layout/header'
 import { LinhaServicos } from '../components/layout/linha-servicos'
+import { SecaoEtapa } from './sections/secao-etapa'
 import { SecaoExplorar } from './sections/secao-explorar'
 import { SecaoInicio } from './sections/secao-inicio'
+import { SecaoTrabalho } from './sections/secao-trabalhos'
 
 export function StudioVit() {
   return (
@@ -22,6 +24,12 @@ export function StudioVit() {
       </div>
       <div className="w-full">
         <SecaoExplorar />
+      </div>
+      <div className="w-full">
+        <SecaoTrabalho />
+      </div>
+      <div className="w-full">
+        <SecaoEtapa />
       </div>
     </main>
   )

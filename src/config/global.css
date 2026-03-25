@@ -226,6 +226,28 @@
   font-style: italic;
 }
 
+@keyframes marquee-right {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.animate-marquee {
+  animation: marquee-right 30s linear infinite;
+  display: flex;
+  min-width: 351%;
+  will-change: transform;
+}
+
+@media (max-width: 720px) {
+  .animate-marquee {
+    min-width: 760%;
+  }
+}
+
 @font-face {
   font-family: 'Poppins';
   src: url('../assets/fonts/Poppins-ExtraBold.ttf');
@@ -327,4 +349,3 @@ body {
     padding-top: 2rem;
   }
 }
-

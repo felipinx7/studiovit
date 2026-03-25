@@ -10,10 +10,9 @@ export function CardApresentacao() {
 
       <p className="flex gap-1 text-[0.65rem] font-semibold md:text-[0.7rem]">
         <b className="">|</b>{' '}
-        <span className="hidden md:inline">
+        <span className="">
           Vamos conversar sobre a sua ideia?
         </span>
-        <span className="md:hidden">Sua ideia!</span>
       </p>
     </article>
   )
