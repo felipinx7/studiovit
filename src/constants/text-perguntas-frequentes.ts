@@ -13,7 +13,7 @@ export const textPerguntasFrequentes: interfacePerguntasFrequente[] = [
     pergunta: 'Quais informações preciso enviar para iniciar o projeto?',
     resposta:
       'Antes do início, você responderá a um briefing. Esse formulário reúne todas as informações essenciais para entender suas preferências, referências e objetivos com o projeto.',
-    direcao: false,
+    direcao: true,
   },
   {
     id: '3',
@@ -34,7 +34,7 @@ export const textPerguntasFrequentes: interfacePerguntasFrequente[] = [
     pergunta: 'Existe limite de alterações?',
     resposta:
       'Sim. As alterações são baseadas no briefing enviado inicialmente. Ajustes podem ser feitos dentro da proposta solicitada, mas mudanças completas de conceito ou ideia não estão incluídas.',
-    direcao: false,
+    direcao: true,
   },
   {
     id: '6',
@@ -48,7 +48,7 @@ export const textPerguntasFrequentes: interfacePerguntasFrequente[] = [
     pergunta: 'Existe reembolso em caso de desistência?',
     resposta:
       'Não. Após o pagamento inicial de 50%, não há reembolso em caso de desistência do projeto. O cliente tem direito de solicitar reembolso caso o projeto não seja entregue dentro do prazo estabelecido.',
-    direcao: false,
+    direcao: true,
   },
   {
     id: '8',

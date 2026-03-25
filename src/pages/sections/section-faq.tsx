@@ -18,7 +18,7 @@ export function SectionFaq() {
         {/* containr das perguntas  */}
         <div className="w-full flex items-center justify-center flex-col gap-4">
           {textPerguntasFrequentes.map((pergunta) => (
-            <CardFaq {...pergunta} key={pergunta.id} />
+            <CardFaq {...pergunta} direcao={pergunta.direcao} key={pergunta.id} />
           ))}
         </div>
       </div>

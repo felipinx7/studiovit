@@ -1,3 +1,6 @@
+import AOS from 'aos'
+import 'aos/dist/aos.css'
+import { useEffect } from 'react'
 import { Header } from '../components/layout/header'
 import { LinhaServicos } from '../components/layout/linha-servicos'
 import { Footer } from './sections/footer'
@@ -10,6 +13,17 @@ import { SecaoTrabalho } from './sections/secao-trabalhos'
 import { SectionFaq } from './sections/section-faq'
 
 export function StudioVit() {
+  // configuração da bliblioteca aos
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      easing: 'ease-in-out',
+      mirror: true,
+      once: false,
+      offset: 100,
+    })
+  }, [])
+
   return (
     <main className="flex w-full flex-col items-center justify-start overflow-x-hidden">
       {/* conteúdo do header  */}
@@ -20,10 +34,10 @@ export function StudioVit() {
       </div>
 
       {/* Seções da site  */}
-      <div className="w-full pt-28">
+      <div className="w-full">
         <SecaoInicio />
       </div>
-      <div className="w-full">
+      <div className="w-full z-10">
         <LinhaServicos />
       </div>
       <div className="w-full">
@@ -44,7 +58,7 @@ export function StudioVit() {
       <div className="w-full">
         <SecaoContato />
       </div>
-      <div className='w-full'>
+      <div className="w-full">
         <Footer />
       </div>
     </main>

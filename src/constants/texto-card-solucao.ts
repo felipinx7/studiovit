@@ -15,6 +15,7 @@ export const textoCardSolucao: InterfaceCardSolucao[] = [
     linkWhatsapp: mensagemWhatsapp(
       'Olá, gostaria de mais informações sobre Design para redes sociais',
     ),
+    direcao: false
   },
   {
     icone: IconeEstampaBlusa,
@@ -24,6 +25,7 @@ export const textoCardSolucao: InterfaceCardSolucao[] = [
     linkWhatsapp: mensagemWhatsapp(
       'Olá, gostaria de mais informações sobre Estampas camisas',
     ),
+    direcao: false
   },
   {
     icone: IconeIdentidadeVisual,
@@ -33,6 +35,7 @@ export const textoCardSolucao: InterfaceCardSolucao[] = [
     linkWhatsapp: mensagemWhatsapp(
       'Olá, gostaria de mais informações sobre Identidade visual',
     ),
+    direcao: false
   },
   {
     icone: IconeImpressao,
@@ -42,6 +45,7 @@ export const textoCardSolucao: InterfaceCardSolucao[] = [
     linkWhatsapp: mensagemWhatsapp(
       'Olá, gostaria de mais informações sobre Materiais impressos',
     ),
+    direcao: false
   },
   {
     icone: IconeVideo,
@@ -51,5 +55,6 @@ export const textoCardSolucao: InterfaceCardSolucao[] = [
     linkWhatsapp: mensagemWhatsapp(
       'Olá, gostaria de mais informações sobre Produção e edição de vídeos',
     ),
+    direcao: false
   },
 ]

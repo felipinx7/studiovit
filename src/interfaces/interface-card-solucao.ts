@@ -5,4 +5,5 @@ export interface InterfaceCardSolucao{
     nomeSolucao: string,
     descricao: string,
     linkWhatsapp: string;
+    direcao: boolean
 }

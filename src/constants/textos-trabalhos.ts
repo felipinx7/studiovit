@@ -1,1 +1,22 @@
-export const textoTrabalhos: string[] = ["● Design para redes sociais", "● Estampas camisas", "● Identidade visual", "● Materiais impressos", "● Produção e edição de videos", "● Design para redes sociais", "● Estampas camisas", "● Identidade visual", "● Materiais impressos", "● Produção e edição de videos"]
+export const textoTrabalhos: string[] = [
+  '● Design para redes sociais',
+  '● Estampas camisas',
+  '● Identidade visual',
+  '● Materiais impressos',
+  '● Produção e edição de videos',
+  '● Design para redes sociais',
+  '● Estampas camisas',
+  '● Identidade visual',
+  '● Materiais impressos',
+  '● Produção e edição de videos',
+  '● Design para redes sociais',
+  '● Estampas camisas',
+  '● Identidade visual',
+  '● Materiais impressos',
+  '● Produção e edição de videos',
+  '● Design para redes sociais',
+  '● Estampas camisas',
+  '● Identidade visual',
+  '● Materiais impressos',
+  '● Produção e edição de videos',
+]

@@ -286,6 +286,7 @@
   --color-primary-700: #ffaa00;
   --color-neutral-100: #f7f6fb;
   --color-neutral-0: #171618;
+  --color-primary-amarelo: #ffd800;
 
   --font-family-primary: 'Poppins', sans-serif;
   --font-family-secondary: 'AlbertSans', sans-serif;
@@ -323,7 +324,7 @@ body {
 }
 
 .animate-scroll-tags {
-  animation: scroll-tags 10s linear infinite;
+  animation: scroll-tags 7s linear infinite;
   transition: opacity 0.3s ease;
 }
 

@@ -1,9 +1,11 @@
-import { fotoprojeto } from '../../assets/image'
+interface InterfaceCardTrabalho {
+  imagem: string
+}
 
-export function CardTrabalho() {
+export function CardTrabalho({ imagem }: InterfaceCardTrabalho) {
   return (
-    <article className="">
-      <img src={fotoprojeto} className="w-[350px]" alt="" />
+    <article className="h-[400px] max-md:h-[350px] max-md:w-[300px] w-[350px] overflow-hidden rounded-2xl">
+      <img src={imagem} className="h-full w-full object-cover" alt="" />
     </article>
   )
 }

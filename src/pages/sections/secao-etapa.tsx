@@ -3,10 +3,16 @@ import { textCardEtapa } from '../../constants/text-card-etapa'
 
 export function SecaoEtapa() {
   return (
-    <section className="flex w-full items-center justify-center pt-28 max-md:pt-40">
+    <section
+      id="processo"
+      className="flex w-full items-center justify-center pt-20 max-md:pt-0"
+    >
       <div className="mt-0 flex w-[180%] max-w-[1280px] flex-col items-start justify-center gap-16 py-4">
         {/* container do texto  */}
-        <div className="flex w-full justify-center text-center text-4xl font-bold">
+        <div
+          data-aos="fade-left"
+          className="flex w-full justify-center text-center text-4xl font-bold"
+        >
           <h1>COMO INICIAR SEU PROJETO</h1>
         </div>
 
