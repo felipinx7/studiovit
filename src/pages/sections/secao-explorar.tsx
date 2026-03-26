@@ -3,7 +3,7 @@ import { textoCardSolucao } from '../../constants/texto-card-solucao'
 
 export function SecaoExplorar() {
   return (
-    <section id='servico' className="flex w-full items-start justify-center px-5 py-36 md:px-6 md:py-24">
+    <section id='servico' className="flex w-full items-start justify-center px-5 py-36 md:px-6 max-md:py-10">
       <div className="flex w-full max-w-[1280px] flex-col items-center justify-between gap-10">
         {/* Conatiner de texto */}
         <div data-aos="fade-right" className="flex w-full justify-center max-md:pt-12 text-center text-4xl font-bold">

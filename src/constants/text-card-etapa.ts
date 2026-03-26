@@ -25,7 +25,7 @@ export const textCardEtapa: InterfaceCardEtapa[] = [
   {
     icone: IconeEtapa04,
     numeroEtapa: "4º Etapa",
-    descricao: "Efetue o pagamento.",
+    descricao: "Efetue o pagamento para dar continuidade",
   },
   {
     icone: IconeEtapa05,
