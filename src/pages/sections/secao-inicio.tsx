@@ -1,4 +1,5 @@
 import { ondas } from '../../assets/image'
+import { LinhaServicos } from '../../components/layout/linha-servicos'
 import { CardApresentacao } from '../../components/ui/card-apresentacao'
 
 export function SecaoInicio() {
@@ -7,9 +8,9 @@ export function SecaoInicio() {
       id="inicio"
       className="flex w-full items-center justify-center px-12 pt-42 pb-28 max-md:pt-52"
     >
-      <div className="mt-0 z-10 flex w-[100%] max-w-[1280px] items-center justify-center max-md:pt-48">
+      <div className="z-10 mt-0 flex w-[100%] max-w-[1280px] items-center justify-center max-md:pt-48">
         {/* container do conteúdo principal */}
-        <div className="flex flex-col items-center justify-center gap-4 pb-10">
+        <div className="flex flex-col items-center justify-center gap-4 max-md:-translate-y-8">
           {/* container do card de apresentação */}
           <div className="flex w-auto justify-center">
             <CardApresentacao />
@@ -44,9 +45,10 @@ export function SecaoInicio() {
 
       <img
         src={ondas}
-        className="absolute bottom-0 left-0 z-0 w-[50000px] translate-x-[-1rem] translate-y-[5rem] max-lg:translate-y-[3rem]"
+        className="absolute bottom-0 left-0 z-0 w-[50000px] translate-x-[-1rem] translate-y-[5rem] max-lg:translate-y-[3rem] max-md:hidden"
         alt=""
       />
+
     </section>
   )
 }

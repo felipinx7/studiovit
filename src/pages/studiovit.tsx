@@ -37,7 +37,7 @@ export function StudioVit() {
       <div className="w-full">
         <SecaoInicio />
       </div>
-      <div className="w-full z-10">
+      <div className="bottom-0 z-10 w-full">
         <LinhaServicos />
       </div>
       <div className="w-full">
