@@ -1,5 +1,4 @@
-import { ondas } from '../../assets/image'
-import { LinhaServicos } from '../../components/layout/linha-servicos'
+import { fundoOnda, ondas } from '../../assets/image'
 import { CardApresentacao } from '../../components/ui/card-apresentacao'
 
 export function SecaoInicio() {
@@ -49,6 +48,7 @@ export function SecaoInicio() {
         alt=""
       />
 
+      <img src={fundoOnda} className="absolute z-0" alt="" />
     </section>
   )
 }

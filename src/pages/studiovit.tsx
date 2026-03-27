@@ -34,7 +34,7 @@ export function StudioVit() {
       </div>
 
       {/* Seções da site  */}
-      <div className="w-full">
+      <div className="w-full overflow-hidden">
         <SecaoInicio />
       </div>
       <div className="bottom-0 z-10 w-full">

@@ -12,6 +12,7 @@ import foto08 from './foto08.jpg'
 import foto09 from './foto09.jpg'
 import foto10 from './foto-meninos.png'
 import foto11 from './foto-mirim.png'
+import fundoOnda from "./ondas-imagem.png"
 
 export {
   logoVit,
@@ -28,4 +29,5 @@ export {
   foto09,
   foto10,
   foto11,
+  fundoOnda
 }
