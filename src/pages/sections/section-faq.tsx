@@ -16,7 +16,7 @@ export function SectionFaq() {
         </div>
 
         {/* containr das perguntas  */}
-        <div className="w-full flex items-center justify-center flex-col gap-4">
+        <div data-testid="container-card-faq" className="w-full flex items-center justify-center flex-col gap-4">
           {textPerguntasFrequentes.map((pergunta) => (
             <CardFaq {...pergunta} direcao={pergunta.direcao} key={pergunta.id} />
           ))}

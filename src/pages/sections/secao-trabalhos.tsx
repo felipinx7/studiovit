@@ -18,7 +18,7 @@ export function SecaoTrabalho() {
       id="trabalho"
       className="flex w-full items-start justify-center py-4 max-md:pb-10"
     >
-      <div className="flex w-full max-w-[1280px] flex-col items-center justify-center gap-10">
+      <div data-testid="container-trabalhos" className="flex w-full max-w-[1280px] flex-col items-center justify-center gap-10">
         <div className="relative w-full overflow-hidden">
           <div className="animate-marquee flex items-center gap-4">
             <CardTrabalho imagem={foto01} />

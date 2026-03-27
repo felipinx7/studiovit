@@ -11,7 +11,7 @@ export function SecaoExplorar() {
         </div>
 
         {/* container dos cards */}
-        <div className="w-full items-center justify-center">
+        <div data-testid="container-dos-cards-explorar" className="w-full items-center justify-center">
           <div className="grid grid-cols-1 place-items-center gap-4 md:grid-cols-2 md:gap-6 lg:grid-cols-3">
             {textoCardSolucao.map((link) => (
               <CardExplorar

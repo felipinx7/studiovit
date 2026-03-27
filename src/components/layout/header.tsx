@@ -19,8 +19,13 @@ export function Header() {
 
         <div className="flex w-full items-center justify-between max-md:hidden">
           {/* Container da logo */}
-          <div onClick={() => scrollParaIrSecao("inicio")}>
-            <img src={logoVit} className="w-[3rem] cursor-pointer" alt="" />
+          <div onClick={() => scrollParaIrSecao('inicio')}>
+            <img
+              src={logoVit}
+              aria-label="logoVit"
+              className="w-[3rem] cursor-pointer"
+              alt=""
+            />
           </div>
 
           {/* Container dos links */}
@@ -29,7 +34,7 @@ export function Header() {
               <a
                 key={link.section}
                 onClick={() => scrollParaIrSecao(link.id)}
-                className="text-neutral-0/60 cursor-pointer after:bg-primary-100 hover:text-neutral-0 relative after:absolute after:bottom-0 after:left-0 after:h-[2.5px] after:w-0 after:transition-all after:duration-500 hover:after:w-full"
+                className="text-neutral-0/60 after:bg-primary-100 hover:text-neutral-0 relative cursor-pointer after:absolute after:bottom-0 after:left-0 after:h-[2.5px] after:w-0 after:transition-all after:duration-500 hover:after:w-full"
               >
                 {link.nomeLink}
               </a>
@@ -37,7 +42,10 @@ export function Header() {
           </div>
 
           {/* botão de contato */}
-          <button onClick={() => scrollParaIrSecao("contato")} className="from-primary-100 cursor-pointer rounded-[30px] bg-gradient-to-r to-amber-500 px-8 py-3 font-semibold text-white transition-all duration-[0.5s] ease-in-out hover:scale-105 hover:shadow-2xs">
+          <button
+            onClick={() => scrollParaIrSecao('contato')}
+            className="from-primary-100 cursor-pointer rounded-[30px] bg-gradient-to-r to-amber-500 px-8 py-3 font-semibold text-white transition-all duration-[0.5s] ease-in-out hover:scale-105 hover:shadow-2xs"
+          >
             contate-nos
           </button>
         </div>
@@ -49,7 +57,10 @@ export function Header() {
           {/* container informação logo e barras */}
           <div className="flex w-full items-center justify-between p-3">
             {/* container da logo  */}
-            <div className='cursor-pointer' onClick={() => scrollParaIrSecao('inicio')}>
+            <div
+              className="cursor-pointer"
+              onClick={() => scrollParaIrSecao('inicio')}
+            >
               <img src={logoVit} className="w-[3rem]" alt="" />
             </div>
 

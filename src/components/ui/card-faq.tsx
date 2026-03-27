@@ -17,10 +17,10 @@ export function CardFaq(props: interfacePerguntasFrequente) {
       <div>
         {/* container da pergunta  */}
         <div className="flex w-full items-center justify-between py-2">
-          <h5 className="font-family-secondary text-[1.2rem] font-semibold max-md:text-[1rem]">
+          <h5 data-testid="pergunta" className="font-family-secondary text-[1.2rem] font-semibold max-md:text-[1rem]">
             {props.pergunta}
           </h5>
-          <p className="cursor-pointer" onClick={handleAbrirResposta}>
+          <p data-testid="icone" className="cursor-pointer" onClick={handleAbrirResposta}>
             {abrirResposta ? (
               <IconeMinimizar className="w-12" />
             ) : (
@@ -33,7 +33,7 @@ export function CardFaq(props: interfacePerguntasFrequente) {
         <div
           className={`text-left transition-all duration-500 ease-in-out ${abrirResposta ? 'max-h-[96px] translate-y-0 opacity-100 max-md:max-h-full' : 'max-h-0 -translate-y-2 opacity-0'} `}
         >
-          <p className="font-family-secondary text-neutral-0 w-[90%] text-[1.1rem] max-md:text-[0.9rem]">
+          <p data-testid="resposta" className="font-family-secondary text-neutral-0 w-[90%] text-[1.1rem] max-md:text-[0.9rem]">
             {props.resposta}
           </p>
         </div>

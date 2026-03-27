@@ -18,7 +18,7 @@ export function SecaoEtapa() {
 
         {/* container dos cards */}
 
-        <div className="w-full items-center justify-center px-8">
+        <div data-testid="container-cards-etapa" className="w-full items-center justify-center px-8">
           <div className="grid grid-cols-3 gap-5 max-md:grid-cols-2">
             {textCardEtapa.map((link) => (
               <CardEtapa {...link} key={link.numeroEtapa} />
