@@ -332,7 +332,7 @@ body {
   animation-play-state: paused;
 }
 
-.pulse-glow:hover {
+.pulse-glow {
   border-radius: 8px;
   width: 100%;
   animation: pulseSpread 2s ease-out infinite;
