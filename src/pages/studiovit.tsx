@@ -12,6 +12,7 @@ import { SecaoInicio } from './sections/secao-inicio'
 import { SecaoTrabalho } from './sections/secao-trabalhos'
 import { SectionFaq } from './sections/section-faq'
 
+
 export function StudioVit() {
   // configuração da bliblioteca aos
   useEffect(() => {
@@ -34,10 +35,10 @@ export function StudioVit() {
       </div>
 
       {/* Seções da site  */}
-      <div className="w-full overflow-hidden">
+      <div className="w-full">
         <SecaoInicio />
       </div>
-      <div className="bottom-0 z-10 w-full">
+      <div className="bottom-0 z-10 w-full overflow-x-hidden">
         <LinhaServicos />
       </div>
       <div className="w-full">

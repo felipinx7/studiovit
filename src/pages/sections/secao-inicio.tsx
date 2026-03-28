@@ -1,15 +1,16 @@
-import { fundoOnda, ondas } from '../../assets/image'
 import { CardApresentacao } from '../../components/ui/card-apresentacao'
+import { CardTrabalho } from '../../components/ui/card-trabalho'
+import { ImagemTrabalhos } from '../../constants/array-de-imagem'
 
 export function SecaoInicio() {
   return (
     <section
       id="inicio"
-      className="flex w-full items-center justify-center px-12 pt-42 pb-28 max-md:pt-52"
+      className="flex h-screen w-full items-center justify-center pt-10 pb-28 max-md:pb-0 max-md:h-auto max-md:flex-col max-md:pt-20"
     >
       <div className="z-10 mt-0 flex w-[100%] max-w-[1280px] items-center justify-center max-md:pt-48">
         {/* container do conteúdo principal */}
-        <div className="flex flex-col items-center justify-center gap-4 max-md:-translate-y-8">
+        <div className="flex flex-col items-center justify-center gap-4 max-md:-translate-y-8 max-md:px-12">
           {/* container do card de apresentação */}
           <div className="flex w-auto justify-center">
             <CardApresentacao />
@@ -31,7 +32,7 @@ export function SecaoInicio() {
           </div>
 
           {/* container dos botões  */}
-          <div className="font-family-secondary responsive-layout mt-4 flex items-center justify-center gap-4 max-sm:w-full">
+          <div className="font-family-secondary max-md:pb-10 responsive-layout mt-4 flex items-center justify-center gap-4 max-sm:w-full">
             <button className="from-primary-100 h-auto w-auto cursor-pointer rounded-[10px] bg-gradient-to-r to-amber-500 px-8 py-3 text-[1rem] font-bold text-white transition-all duration-300 ease-out hover:scale-105 hover:shadow-lg active:scale-95 max-sm:w-full max-sm:wrap-break-word">
               <p className="break-all">Agendar Serviço </p>
             </button>
@@ -41,14 +42,34 @@ export function SecaoInicio() {
           </div>
         </div>
       </div>
+      {/* cotainer scroll das artes */}
 
-      <img
-        src={ondas}
-        className="absolute bottom-0 left-0 z-0 w-[50000px] translate-x-[-1rem] translate-y-[5rem] max-lg:translate-y-[3rem] max-md:hidden"
-        alt=""
-      />
+      <div
+        data-testid="container-trabalhos"
+        className="absolute z-0 w-full overflow-hidden max-sm:translate-y-0 translate-y-[23rem] -rotate-[4deg] flex-col items-center justify-center gap-10 max-md:relative max-md:translate-y-6"
+      >
+        <div className="absolute top-0 left-0 z-[2] h-[250px] w-[500px] -translate-x-1/2 rounded-full bg-gradient-to-r from-transparent via-[#f7f6fb]/80 to-transparent opacity-60 blur-xl"></div>
+        <div className="absolute top-0 right-0 z-[2] h-[250px] w-[500px] translate-x-[15rem] rounded-full bg-gradient-to-r from-transparent via-[#f7f6fb]/80 to-transparent opacity-60 blur-xl"></div>
+        <div className="relative w-full overflow-hidden">
+          <div className="animate-marquee flex items-center justify-center gap-4">
+            {ImagemTrabalhos.map((image, index) => (
+              <CardTrabalho
+                tamanhoCard="max-md:w-w-[200px] h-[300px] w-[250px]"
+                imagem={image}
+                key={index}
+              />
+            ))}
 
-      <img src={fundoOnda} className="absolute z-0" alt="" />
+            {ImagemTrabalhos.map((image, index) => (
+              <CardTrabalho
+                tamanhoCard="max-md:w-w-[200px] h-[300px] w-[250px]"
+                imagem={image}
+                key={index}
+              />
+            ))}
+          </div>
+        </div>
+      </div>
     </section>
   )
 }

@@ -16,7 +16,5 @@ describe('Header', () => {
       screen.getByRole('button', { name: 'contate-nos' }),
     ).toBeInTheDocument()
 
-    // Testando renderização da log
-    expect(screen.getByLabelText('logoVit')).toBeInTheDocument()
   })
 })

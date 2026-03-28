@@ -1,10 +1,13 @@
 interface InterfaceCardTrabalho {
   imagem: string
+  tamanhoCard?: string
 }
 
-export function CardTrabalho({ imagem }: InterfaceCardTrabalho) {
+export function CardTrabalho({ imagem, tamanhoCard }: InterfaceCardTrabalho) {
   return (
-    <article className="h-[400px] max-md:h-[350px] max-md:w-[300px] w-[350px] overflow-hidden rounded-2xl">
+    <article
+      className={`${tamanhoCard ?? 'h-[400px] w-[350px]'} flex-shrink-0 overflow-hidden rounded-2xl`}
+    >
       <img src={imagem} className="h-full w-full object-cover" alt="" />
     </article>
   )
