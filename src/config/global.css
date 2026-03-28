@@ -357,11 +357,11 @@ body {
   top: 0;
   left: -120%;
   height: 100%;
-  width: 60%;
+  width: 30%;
   transform: rotate(12deg);
   background: rgba(255, 255, 255, 0.4);
-  filter: blur(8px);
-  animation: shineMove 2s ease-in-out infinite;
+  filter: blur(25px);
+  animation: shineMove 3s ease-in-out infinite;
 }
 
 @keyframes shineMove {
