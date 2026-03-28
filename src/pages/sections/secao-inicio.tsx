@@ -33,11 +33,10 @@ export function SecaoInicio() {
 
           {/* container dos botões  */}
           <div className="font-family-secondary responsive-layout mt-4 flex items-center justify-center gap-4 max-md:pb-10 max-sm:w-full">
-            <button className="group from-primary-100 relative h-auto w-auto cursor-pointer overflow-hidden rounded-[10px] bg-gradient-to-r to-amber-500 px-8 py-3 text-[1rem] font-bold text-white transition-all duration-300 ease-out hover:scale-105 hover:shadow-lg active:scale-95 max-sm:w-full">
+            <button className="from-primary-100 relative h-auto w-auto cursor-pointer overflow-hidden rounded-[10px] bg-gradient-to-r to-amber-500 px-8 py-3 text-[1rem] font-bold text-white transition-all duration-300 ease-out hover:scale-105 hover:shadow-lg active:scale-95 max-sm:w-full">
               <span className="relative z-10">Agendar Serviço</span>
 
-              {/* brilho */}
-              <span className="pointer-events-none absolute top-0 left-[-120%] h-full w-[60%] rotate-12 bg-white/40 blur-md transition-all duration-700 ease-in-out group-hover:left-[120%]" />
+              <span className="shine-loop pointer-events-none" />
             </button>
             <button className="outline-primary-100 hover:bg-primary-100 hover:bg-opacity-10 h-auto w-auto cursor-pointer rounded-[10px] px-8 py-3 text-[1rem] font-medium outline outline-2 outline-offset-[-2px] transition-all duration-300 ease-out hover:scale-105 hover:shadow-lg active:scale-95 max-sm:w-full">
               <p>Ver como funciona</p>

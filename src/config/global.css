@@ -352,6 +352,32 @@ body {
   }
 }
 
+.shine-loop {
+  position: absolute;
+  top: 0;
+  left: -120%;
+  height: 100%;
+  width: 60%;
+  transform: rotate(12deg);
+  background: rgba(255, 255, 255, 0.4);
+  filter: blur(8px);
+  animation: shineMove 2s ease-in-out infinite;
+}
+
+@keyframes shineMove {
+  0% {
+    left: -120%;
+  }
+
+  50% {
+    left: 120%;
+  }
+
+  100% {
+    left: 120%;
+  }
+}
+
 @media (max-width: 768px) {
   body {
     overflow-x: hidden;
