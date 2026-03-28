@@ -52,6 +52,7 @@ export function Header() {
               <div onClick={() => scrollParaIrSecao('inicio')}>
                 <img
                   src={logoVit}
+                  loading="lazy"
                   aria-label="logoVit"
                   className="w-[3rem] cursor-pointer"
                   alt=""
@@ -101,6 +102,7 @@ export function Header() {
                 >
                   <img
                     src={logoVit}
+                    loading="lazy"
                     aria-label="logoVit"
                     className="w-[3rem]"
                     alt=""
