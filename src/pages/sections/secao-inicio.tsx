@@ -6,7 +6,7 @@ export function SecaoInicio() {
   return (
     <section
       id="inicio"
-      className="flex h-screen w-full items-center justify-center pt-10 pb-28 max-md:pb-0 max-md:h-auto max-md:flex-col max-md:pt-20"
+      className="flex h-screen w-full items-center justify-center pt-10 pb-28 max-md:h-auto max-md:flex-col max-md:pt-20 max-md:pb-0"
     >
       <div className="z-10 mt-0 flex w-[100%] max-w-[1280px] items-center justify-center max-md:pt-48">
         {/* container do conteúdo principal */}
@@ -32,9 +32,12 @@ export function SecaoInicio() {
           </div>
 
           {/* container dos botões  */}
-          <div className="font-family-secondary max-md:pb-10 responsive-layout mt-4 flex items-center justify-center gap-4 max-sm:w-full">
-            <button className="from-primary-100 h-auto w-auto cursor-pointer rounded-[10px] bg-gradient-to-r to-amber-500 px-8 py-3 text-[1rem] font-bold text-white transition-all duration-300 ease-out hover:scale-105 hover:shadow-lg active:scale-95 max-sm:w-full max-sm:wrap-break-word">
-              <p className="break-all">Agendar Serviço </p>
+          <div className="font-family-secondary responsive-layout mt-4 flex items-center justify-center gap-4 max-md:pb-10 max-sm:w-full">
+            <button className="group from-primary-100 relative h-auto w-auto cursor-pointer overflow-hidden rounded-[10px] bg-gradient-to-r to-amber-500 px-8 py-3 text-[1rem] font-bold text-white transition-all duration-300 ease-out hover:scale-105 hover:shadow-lg active:scale-95 max-sm:w-full">
+              <span className="relative z-10">Agendar Serviço</span>
+
+              {/* brilho */}
+              <span className="pointer-events-none absolute top-0 left-[-120%] h-full w-[60%] rotate-12 bg-white/40 blur-md transition-all duration-700 ease-in-out group-hover:left-[120%]" />
             </button>
             <button className="outline-primary-100 hover:bg-primary-100 hover:bg-opacity-10 h-auto w-auto cursor-pointer rounded-[10px] px-8 py-3 text-[1rem] font-medium outline outline-2 outline-offset-[-2px] transition-all duration-300 ease-out hover:scale-105 hover:shadow-lg active:scale-95 max-sm:w-full">
               <p>Ver como funciona</p>
@@ -46,10 +49,10 @@ export function SecaoInicio() {
 
       <div
         data-testid="container-trabalhos"
-        className="absolute z-0 w-full overflow-hidden max-sm:translate-y-0 translate-y-[23rem] -rotate-[4deg] flex-col items-center justify-center gap-10 max-md:relative max-md:translate-y-6"
+        className="absolute z-0 w-full translate-y-[23rem] -rotate-[4deg] flex-col items-center justify-center gap-10 overflow-hidden max-md:relative max-md:translate-y-6 max-sm:translate-y-0"
       >
-        <div className="absolute top-0 left-0 z-[2] h-[250px] w-[500px] -translate-x-1/2 rounded-full bg-gradient-to-r from-transparent via-[#f7f6fb]/80 to-transparent opacity-60 blur-xl"></div>
-        <div className="absolute top-0 right-0 z-[2] h-[250px] w-[500px] translate-x-[15rem] rounded-full bg-gradient-to-r from-transparent via-[#f7f6fb]/80 to-transparent opacity-60 blur-xl"></div>
+        <div className="absolute top-0 left-0 z-0 z-[2] h-[250px] w-[500px] -translate-x-1/2 rounded-full bg-gradient-to-r from-transparent via-[#f7f6fb]/80 to-transparent opacity-60 blur-xl"></div>
+        <div className="absolute top-0 right-0 z-0 z-[2] h-[250px] w-[500px] translate-x-[15rem] rounded-full bg-gradient-to-r from-transparent via-[#f7f6fb]/80 to-transparent opacity-60 blur-xl"></div>
         <div className="relative w-full overflow-hidden">
           <div className="animate-marquee flex items-center justify-center gap-4">
             {ImagemTrabalhos.map((image, index) => (

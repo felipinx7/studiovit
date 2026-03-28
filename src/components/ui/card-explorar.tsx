@@ -29,7 +29,7 @@ export function CardExplorar(props: InterfaceCardSolucao) {
 
         {/* container do botão */}
         <div className="bg-primary-100 flex w-full items-center justify-center rounded-[8.40px]">
-          <button className="flex h-auto w-[80%] items-center justify-center p-2 text-center">
+          <button className="flex pulse-glow cursor-pointer  h-auto w-[80%] items-center justify-center p-2 text-center">
             <a
               target="_blank"
               href={props.linkWhatsapp}

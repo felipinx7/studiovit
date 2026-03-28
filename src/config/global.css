@@ -332,6 +332,26 @@ body {
   animation-play-state: paused;
 }
 
+.pulse-glow:hover {
+  border-radius: 8px;
+  width: 100%;
+  animation: pulseSpread 2s ease-out infinite;
+}
+
+@keyframes pulseSpread {
+  0% {
+    box-shadow: 0 0 0 0 rgba(245, 158, 11, 0.6);
+  }
+
+  70% {
+    box-shadow: 0 0 0 20px rgba(245, 158, 11, 0);
+  }
+
+  100% {
+    box-shadow: 0 0 0 0 rgba(245, 158, 11, 0);
+  }
+}
+
 @media (max-width: 768px) {
   body {
     overflow-x: hidden;
