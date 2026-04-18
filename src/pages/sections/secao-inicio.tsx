@@ -33,7 +33,7 @@ export function SecaoInicio() {
           </div>
 
           {/* container dos botões  */}
-          <div className="font-family-secondary responsive-layout mt-4 flex items-center justify-center gap-4 max-md:pb-10 max-sm:w-full">
+          <div className="font-family-secondary responsive-layout mt-4 flex items-center justify-center w-[29rem] gap-4 max-md:pb-10 max-sm:w-full">
             <a
               href="https://wa.me/5588992179617?text=Olá, gostaria de mais informações sobre o seu trabalho!"
               className="flex items-center max-sm:w-full w-full justify-center gap-4"
@@ -47,9 +47,9 @@ export function SecaoInicio() {
             </a>
             <button
               onClick={() => scrollParaIrSecao('processo')}
-              className="outline-primary-100 hover:bg-primary-100 hover:bg-opacity-10 h-auto w-auto cursor-pointer rounded-[10px] px-8 py-3 text-[1rem] font-medium outline outline-2 outline-offset-[-2px] transition-all duration-300 ease-out hover:scale-105 hover:shadow-lg active:scale-95 max-sm:w-full"
+              className="outline-primary-100 hover:bg-primary-100 w-full hover:bg-opacity-10 h-auto w-auto cursor-pointer rounded-[10px] px-8 py-3 text-[1rem] font-medium outline outline-2 outline-offset-[-2px] transition-all duration-300 ease-out hover:scale-105 hover:shadow-lg active:scale-95 max-sm:w-full"
             >
-              <p>Ver como funciona</p>
+              <p className='w-full'>Ver como funciona</p>
             </button>
           </div>
         </div>
