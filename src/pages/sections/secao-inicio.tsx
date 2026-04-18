@@ -36,7 +36,7 @@ export function SecaoInicio() {
           <div className="font-family-secondary responsive-layout mt-4 flex items-center justify-center gap-4 max-md:pb-10 max-sm:w-full">
             <a
               href="https://wa.me/5588992179617?text=Olá, gostaria de mais informações sobre o seu trabalho!"
-              className="flex items-center justify-center gap-4"
+              className="flex items-center max-sm:w-full w-full justify-center gap-4"
               target="_blank"
             >
               <button className="from-primary-100 relative h-auto w-auto cursor-pointer overflow-hidden rounded-[10px] bg-gradient-to-r to-amber-500 px-8 py-3 text-[1rem] font-bold text-white transition-all duration-300 ease-out hover:scale-105 hover:shadow-lg active:scale-95 max-sm:w-full">
