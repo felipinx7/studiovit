@@ -25,7 +25,7 @@ export function SecaoContato() {
           data-aos="fade-left"
           className="flex w-full flex-col items-center justify-center gap-8"
         >
-          <button className="text-neutral-0 hover:bg-primary-700 from-primary-100/0 flex w-[40%] items-center justify-center gap-3 rounded-2xl border-2 border-amber-400 bg-gradient-to-r to-amber-500/0 p-6 text-2xl font-medium shadow-md transition-all duration-500 hover:scale-105 hover:border-black max-md:w-[80%]">
+          <button className="text-neutral-0 hover:bg-primary-70 from-primary-100/0 flex w-[40%] items-center justify-center gap-3 rounded-2xl border-2 border-amber-400 bg-gradient-to-r to-amber-500/0 p-6 text-2xl font-medium shadow-md transition-all duration-500 hover:scale-105 hover:border-black max-md:w-[80%]">
             <a
               href="https://wa.me/5588992179617?text=Olá, gostaria de mais informações sobre o seu trabalho!"
               className="flex items-center justify-center gap-4"
