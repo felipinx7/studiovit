@@ -74,7 +74,7 @@ export function SecaoInicio() {
 
             {ImagemTrabalhos.map((image, index) => (
               <CardTrabalho
-                tamanhoCard="max-md:w-w-[200px] h-[300px] w-[250px]"
+                tamanhoCard="max-md:w-w-[200px] bg-transparent h-[300px] w-[250px]"
                 imagem={image}
                 key={index}
               />
