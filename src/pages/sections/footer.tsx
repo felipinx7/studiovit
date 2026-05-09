@@ -16,7 +16,10 @@ export function Footer() {
         </div>
 
         {/* container direitos autorais  */}
-        <div className="flex w-full max-md:text-[1.1rem] items-center justify-center max-md:justify-start max-md:w-[80%]">
+        <div className="flex w-full flex-col max-md:text-[1.1rem] items-center justify-center max-md:justify-start max-md:w-[80%]">
+          <p className="text-neutral-0/80 text-sx font-family-secondary font-normal">
+           Desenvolvedor Felipe Lima
+          </p>
           <p className="text-neutral-0/80 text-sx font-family-secondary font-normal">
             &copy; 2026 Todos os direitos reservados{' '}
           </p>
