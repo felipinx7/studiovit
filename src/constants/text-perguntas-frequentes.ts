@@ -26,7 +26,7 @@ export const textPerguntasFrequentes: interfacePerguntasFrequente[] = [
     id: '4',
     pergunta: 'Como funciona o processo de aprovação?',
     resposta:
-      'Você receberá uma apresentação em PDF com o projeto desenvolvido. Nela, poderá analisar todos os detalhes e enviar seu feedback para possíveis ajustes antes da finalização.',
+      'Você receberá um modelo piloto com o projeto desenvolvido. Nela, poderá analisar todos os detalhes e enviar seu feedback para possíveis ajustes antes da continuidade ou finalização.',
     direcao: false,
   },
   {
@@ -54,7 +54,7 @@ export const textPerguntasFrequentes: interfacePerguntasFrequente[] = [
     id: '8',
     pergunta: 'Como é feita a entrega dos arquivos?',
     resposta:
-      'Após a aprovação e pagamento final, os arquivos são organizados e enviados via Google Drive. O link ficará disponível por até 3 meses. Após esse período, não garantimos o armazenamento, por isso recomendamos que você faça o download e backup dos arquivos.',
+      'os arquivos são organizados pelo Google Drive, você recebe o link pelo WhatsApp e por lá acompanha todo o recebimento dos arquivos.',
     direcao: false,
   },
 ]
