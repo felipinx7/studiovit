@@ -8,13 +8,13 @@ describe('Seção de Inicio', () => {
     // Testando renderização dos textos da seção principal.
     expect(
       screen.getByRole('heading', {
-        name: /criamos mais que estética criamos resultados/i,
+        name: /Opa, chegou no LUGAR CERTO!/i,
       }),
     ).toBeInTheDocument()
 
     expect(
       screen.getByText(
-        /do conceito ao resultado: transformamos sua ideia em algo que chama atenção e converte/i,
+        /SE VOCÊ QUER ENTENDER COMO POSSO VALORIZAR A IMAGEM DA SUA EMPRESA OU RECEBER UM ORÇAMENTO, CLICA NO BOTÃO A BAIXO./i,
       ),
     ).toBeInTheDocument()
 

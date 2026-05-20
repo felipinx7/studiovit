@@ -226,6 +226,12 @@
   font-style: italic;
 }
 
+/* Font face Burgundia */
+@font-face {
+  font-family: 'Burgundia';
+  src: url('../assets/fonts/Burgundia_PERSONAL_USE_ONLY.otf');
+}
+
 @keyframes marquee-right {
   0% {
     transform: translateX(-50%);
@@ -290,6 +296,7 @@
 
   --font-family-primary: 'Poppins', sans-serif;
   --font-family-secondary: 'AlbertSans', sans-serif;
+  --font-family-burgundia: 'Burgundia', sans-serif;
   --breakpoint-msx: 440px;
 }
 
