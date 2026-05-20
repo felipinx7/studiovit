@@ -6,6 +6,7 @@ import foto02 from './arte-açcai.jpeg'
 import foto06 from './foto-lais.png'
 import foto10 from './foto-meninos.png'
 import fotoprojeto from './foto-projeto.png'
+import fotosecaoprincipal from './Foto-Vit.png'
 import foto09 from './foto09.jpg'
 import foto04 from './Jersey-Segundão.jpg'
 import logoMonocramatica from './Logo-StudioVit-Branco.webp'
@@ -24,6 +25,7 @@ export {
   foto10,
   foto11,
   fotoprojeto,
+  fotosecaoprincipal,
   fundoOnda,
   logoMonocramatica,
   logoVit,
