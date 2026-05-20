@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 import { IconeBarra } from '../../assets/icons/icone-barra'
-import { logoVit } from '../../assets/image'
+import { logoMonocramatica, logoVit } from '../../assets/image'
 import { textoLinkHeader } from '../../constants/links-header'
 import { scrollParaIrSecao } from '../../utils/navegacao-header'
 
@@ -51,10 +51,10 @@ export function Header() {
               {/* Logo */}
               <div onClick={() => scrollParaIrSecao('inicio')}>
                 <img
-                  src={logoVit}
+                  src={isScrolled ? logoVit : logoMonocramatica}
                   loading="lazy"
-                  aria-label="logoVit"
-                  className="w-[3rem] cursor-pointer"
+                  aria-label="logoMonocramatica"
+                  className={`${isScrolled ? 'w-[3rem]' : 'w-[12rem]'} cursor-pointer`}
                   alt=""
                 />
               </div>
@@ -101,10 +101,10 @@ export function Header() {
                   onClick={() => scrollParaIrSecao('inicio')}
                 >
                   <img
-                    src={logoVit}
+                    src={isScrolled ? logoVit : logoMonocramatica}
                     loading="lazy"
-                    aria-label="logoVit"
-                    className="w-[3rem]"
+                    aria-label="logoMonocramatica"
+                    className={`${isScrolled ? 'w-[3rem]' : 'w-[12rem]'} cursor-pointer`}
                     alt=""
                   />
                 </div>
