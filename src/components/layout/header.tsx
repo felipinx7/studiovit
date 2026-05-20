@@ -7,6 +7,18 @@ import { scrollParaIrSecao } from '../../utils/navegacao-header'
 export function Header() {
   const [abrirHeader, setAbrirHeader] = useState(true)
   const [isScrolled, setIsScrolled] = useState(false)
+  const [isMobile, setIsMobile] = useState(false)
+
+  useEffect(() => {
+    function handleResize() {
+      setIsMobile(window.innerWidth <= 768)
+    }
+
+    handleResize()
+    window.addEventListener('resize', handleResize)
+
+    return () => window.removeEventListener('resize', handleResize)
+  }, [])
 
   useEffect(() => {
     function handleScroll() {
@@ -17,58 +29,55 @@ export function Header() {
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])
 
+  const isScrolledReal = isMobile || isScrolled
+
   function ManipularVisibilidadeHeader() {
     setAbrirHeader((prev) => !prev)
   }
 
   return (
     <>
-      {/* Espaço quando vira flutuante */}
-      {isScrolled && <div className="h-[100px]" />}
+      {isScrolledReal && <div className="h-[100px]" />}
 
-      {/* HEADER */}
       <header
         className={`fixed left-0 z-50 w-full transition-all duration-500 ${
-          isScrolled ? 'top-4 px-4' : 'top-0 px-0'
+          isScrolledReal ? 'top-4 px-4' : 'top-4 px-0'
         }`}
       >
-        {/* FUNDO (full width) */}
         <div
           className={`w-full transition-all duration-500 ${
-            isScrolled ? 'bg-transparent' : 'bg-primary-100'
+            isScrolledReal ? 'bg-transparent' : ''
           }`}
         >
-          {/* CONTAINER CENTRAL (1280px) */}
           <div
             className={`mx-auto flex max-w-[1280px] items-center justify-between transition-all duration-500 ${
-              isScrolled
+              isScrolledReal
                 ? 'rounded-[30px] bg-zinc-100/80 px-7 py-4 shadow-lg backdrop-blur-2xl'
                 : 'px-6 py-4'
             }`}
           >
-            {/*  DESKTOP  */}
+            {/* DESKTOP */}
             <div className="flex w-full items-center justify-between max-md:hidden">
-              {/* Logo */}
               <div onClick={() => scrollParaIrSecao('inicio')}>
                 <img
-                  src={isScrolled ? logoVit : logoMonocramatica}
+                  src={isScrolledReal ? logoVit : logoMonocramatica}
                   loading="lazy"
-                  aria-label="logoMonocramatica"
-                  className={`${isScrolled ? 'w-[3rem]' : 'w-[12rem]'} cursor-pointer`}
+                  className={`${
+                    isScrolledReal ? 'w-[3rem]' : 'w-[12rem]'
+                  } cursor-pointer`}
                   alt=""
                 />
               </div>
 
-              {/* Links */}
               <div className="flex items-center gap-4">
                 {textoLinkHeader.map((link) => (
                   <a
                     key={link.section}
                     onClick={() => scrollParaIrSecao(link.id)}
                     className={`relative cursor-pointer transition-all duration-300 after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-0 after:transition-all after:duration-500 hover:after:w-full ${
-                      isScrolled
+                      isScrolledReal
                         ? 'text-neutral-0/60 hover:text-neutral-0 after:bg-primary-100'
-                        : 'text-black after:bg-black hover:text-black'
+                        : 'text-white after:bg-white hover:text-white'
                     }`}
                   >
                     {link.nomeLink}
@@ -76,20 +85,17 @@ export function Header() {
                 ))}
               </div>
 
-              {/* Botão */}
               <button
                 onClick={() => scrollParaIrSecao('contato')}
-                className={`cursor-pointer rounded-[30px] px-8 py-3 font-semibold transition-all duration-500 hover:scale-105 ${
-                  isScrolled
-                    ? 'from-primary-100 bg-gradient-to-r to-amber-500 text-white'
-                    : 'bg-white text-black'
+                className={`from-primary-100 cursor-pointer rounded-[30px] bg-gradient-to-r to-amber-500 px-8 py-3 font-semibold transition-all duration-500 hover:scale-105 ${
+                  isScrolledReal ? 'text-black' : 'text-white'
                 }`}
               >
                 contate-nos
               </button>
             </div>
 
-            {/*  MOBILE  */}
+            {/* MOBILE */}
             <div
               className={`hidden w-full flex-col max-md:flex ${
                 abrirHeader ? 'gap-0' : 'gap-10'
@@ -101,10 +107,9 @@ export function Header() {
                   onClick={() => scrollParaIrSecao('inicio')}
                 >
                   <img
-                    src={isScrolled ? logoVit : logoMonocramatica}
+                    src={logoVit}
                     loading="lazy"
-                    aria-label="logoMonocramatica"
-                    className={`${isScrolled ? 'w-[3rem]' : 'w-[12rem]'} cursor-pointer`}
+                    className="w-[3rem] cursor-pointer"
                     alt=""
                   />
                 </div>
@@ -126,11 +131,7 @@ export function Header() {
                   <a
                     key={link.section}
                     onClick={() => scrollParaIrSecao(link.id)}
-                    className={`text-[1.1rem] ${
-                      isScrolled
-                        ? 'text-neutral-0/60 hover:text-neutral-0'
-                        : 'text-black'
-                    }`}
+                    className="text-[1.1rem] text-black"
                   >
                     {link.nomeLink}
                   </a>
