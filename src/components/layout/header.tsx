@@ -63,7 +63,7 @@ export function Header() {
                   src={isScrolledReal ? logoVit : logoMonocramatica}
                   loading="lazy"
                   className={`${
-                    isScrolledReal ? 'w-[3rem]' : 'w-[12rem]'
+                    isScrolledReal ? 'w-[3rem]' : 'w-[7rem]'
                   } cursor-pointer`}
                   alt=""
                 />
