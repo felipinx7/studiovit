@@ -7,11 +7,11 @@ describe('Seção Elevar', () => {
 
     // Testando renderização dos textos.
     expect(
-      screen.getByText(/Vamos elevar sua presença no digital/i),
+      screen.getByText(/CHEGA DE PASSAR DESPERCEBIDO/i),
     ).toBeInTheDocument()
     expect(
       screen.getByText(
-        /Ganhe mais visibilidade e se posicione melhor no mercado com soluções criativas que chamam atenção e convertem./i,
+        /Se você chegou até aqui, já deu o primeiro passo. Abaixo está tudo que você precisa para a gente começar junto./i,
       ),
     ).toBeInTheDocument()
   })
