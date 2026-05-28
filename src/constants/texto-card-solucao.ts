@@ -7,23 +7,23 @@ import { mensagemWhatsapp } from '../utils/mensagem-whatsapp'
 export const textoCardSolucao: InterfaceCardSolucao[] = [
   {
     icone: IconeCelular,
-    nomeSolucao: 'Design para redes sociais',
+    nomeSolucao: 'Design Social Media',
     descricao:
-      'Desenvolvimento de artes para posters, stories e anúncios, pensadas para fortalecer a presença da marca nas redes sociais.',
+      'Desenvolvimento de conteúdo mensal para redes sociais posts e stories pensados para manter sua marca presente e relevante todo mês.',
     linkWhatsapp: mensagemWhatsapp(
-      'Olá, gostaria de mais informações sobre Design para redes sociais',
+      'Olá, gostaria de mais informações sobre Design Social Media',
     ),
-    direcao: false
+    direcao: false,
   },
   {
     icone: IconeEstampaBlusa,
-    nomeSolucao: 'Estampas camisas',
+    nomeSolucao: 'Estampa De Camisa',
     descricao:
-      'Desenvolvimento de artes e estampas para camisas, uniformes e peças personalizadas para turmas, equipes e instituições.',
+      'Desenvolvimento de estampas para camisas, shorts e demais peças personalizadas de turmas, equipes e instituições.',
     linkWhatsapp: mensagemWhatsapp(
-      'Olá, gostaria de mais informações sobre Estampas camisas',
+      'Olá, gostaria de mais informações sobre Estampa De Camisa',
     ),
-    direcao: false
+    direcao: false,
   },
   {
     icone: IconeVideo,
@@ -33,6 +33,6 @@ export const textoCardSolucao: InterfaceCardSolucao[] = [
     linkWhatsapp: mensagemWhatsapp(
       'Olá, gostaria de mais informações sobre Produção e edição de vídeos',
     ),
-    direcao: false
+    direcao: false,
   },
 ]

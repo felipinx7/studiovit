@@ -8,7 +8,7 @@ export function SecaoInicio() {
       id="inicio"
       className="flex h-auto w-full items-center justify-center overflow-hidden bg-[#1F1916] pt-10 pb-28 max-lg:h-auto max-lg:flex-col max-lg:pt-10 max-lg:pb-0"
     >
-      <div className="z-10 mt-0 flex w-[100%] max-w-[1280px] items-center justify-between pt-32 max-lg:flex-col-reverse max-lg:pt-2">
+      <div className="z-10 mt-0 flex w-[100%] max-w-[1280px] items-center justify-between pt-32 max-lg:flex-col-reverse max-lg:pt-0 max-md:-translate-y-[5rem]">
         {/* container do conteúdo principal */}
         <div className="flex flex-col items-start justify-center gap-4 max-lg:-translate-y-8 max-lg:px-12">
           {/* container do card de apresentação */}
@@ -26,9 +26,9 @@ export function SecaoInicio() {
                 </b>
               </h1>
             </div>
-            <p className="font-family-secondary text-left text-[0.9rem] font-medium text-white max-lg:text-[0.9rem] max-lg:leading-4">
-              SE VOCÊ QUER ENTENDER COMO POSSO VALORIZAR A <br />
-              IMAGEM DA SUA EMPRESA OU RECEBER UM ORÇAMENTO, <br /> CLICA NO
+            <p className="font-family-secondary max-md:w-full text-left text-[0.9rem] font-medium text-white max-lg:text-[0.8rem] max-lg:leading-4">
+              SE VOCÊ QUER ENTENDER COMO POSSO VALORIZAR A <br className='max-md:hidden' />
+              IMAGEM DA SUA EMPRESA OU RECEBER UM ORÇAMENTO, <br className='max-md:hidden' /> CLICA NO
               BOTÃO A BAIXO.
             </p>
           </div>
@@ -56,7 +56,7 @@ export function SecaoInicio() {
         </div>
 
         {/* container da foto vit  */}
-        <div className="absolute left-0 w-full translate-x-[50%] -translate-y-[10%] max-lg:relative max-lg:translate-x-0 max-lg:-translate-y-[5%]">
+        <div className="absolute left-0 w-full translate-x-[50%] -translate-y-[10%] max-lg:relative max-lg:translate-x-0 max-lg:translate-y-[5%]">
           <img src={fotosecaoprincipal} width={700} height={350} />
         </div>
       </div>

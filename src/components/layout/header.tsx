@@ -7,18 +7,6 @@ import { scrollParaIrSecao } from '../../utils/navegacao-header'
 export function Header() {
   const [abrirHeader, setAbrirHeader] = useState(true)
   const [isScrolled, setIsScrolled] = useState(false)
-  const [isMobile, setIsMobile] = useState(false)
-
-  useEffect(() => {
-    function handleResize() {
-      setIsMobile(window.innerWidth <= 768)
-    }
-
-    handleResize()
-    window.addEventListener('resize', handleResize)
-
-    return () => window.removeEventListener('resize', handleResize)
-  }, [])
 
   useEffect(() => {
     function handleScroll() {
@@ -29,7 +17,7 @@ export function Header() {
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])
 
-  const isScrolledReal = isMobile || isScrolled
+  const isScrolledReal = isScrolled
 
   function ManipularVisibilidadeHeader() {
     setAbrirHeader((prev) => !prev)
@@ -41,7 +29,7 @@ export function Header() {
 
       <header
         className={`fixed left-0 z-50 w-full transition-all duration-500 ${
-          isScrolledReal ? 'top-4 px-4' : 'top-4 px-0'
+          isScrolledReal ? 'top-4 px-4' : 'top-0 px-0 bg-[#2A221E] backdrop-blur-2xl'
         }`}
       >
         <div
@@ -63,7 +51,7 @@ export function Header() {
                   src={isScrolledReal ? logoVit : logoMonocramatica}
                   loading="lazy"
                   className={`${
-                    isScrolledReal ? 'w-[3rem]' : 'w-[7rem]'
+                    isScrolledReal ? 'w-[7rem]' : 'w-[7rem]'
                   } cursor-pointer`}
                   alt=""
                 />
@@ -107,14 +95,15 @@ export function Header() {
                   onClick={() => scrollParaIrSecao('inicio')}
                 >
                   <img
-                    src={logoVit}
+                    src={isScrolledReal ? logoVit : logoMonocramatica}
                     loading="lazy"
-                    className="w-[3rem] cursor-pointer"
+                    className="w-[7rem] cursor-pointer max-md:w-[6rem]"
                     alt=""
                   />
                 </div>
 
                 <IconeBarra
+                  scrollHeader={isScrolled}
                   ManipularAbrirHeader={ManipularVisibilidadeHeader}
                   abrirHeader={abrirHeader}
                 />
@@ -131,7 +120,7 @@ export function Header() {
                   <a
                     key={link.section}
                     onClick={() => scrollParaIrSecao(link.id)}
-                    className="text-[1.1rem] text-black"
+                    className={`text-[1.1rem] ${isScrolled ? "text-black" : "text-white"}`}
                   >
                     {link.nomeLink}
                   </a>

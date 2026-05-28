@@ -1,4 +1,5 @@
 export interface InterfaceIconeBarra{
   abrirHeader: boolean, 
-  ManipularAbrirHeader: () => void
+  ManipularAbrirHeader: () => void,
+  scrollHeader?: boolean
 }

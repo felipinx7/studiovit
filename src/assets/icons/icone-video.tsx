@@ -24,7 +24,7 @@ export function IconeVideo({ className }: interfaceClasseIcone) {
           gradientUnits="userSpaceOnUse"
         >
           <stop stop-color="#FFBE2E" />
-          <stop offset="1" stop-color="#FFAA00" />
+          <stop offset="1" stopColor="#FFAA00" />
         </linearGradient>
       </defs>
     </svg>

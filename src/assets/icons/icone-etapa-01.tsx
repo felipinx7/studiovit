@@ -13,23 +13,23 @@ export function IconeEtapa01({ className }: interfaceClasseIcone) {
       <path
         d="M15.6 19.4999L18.2 22.0999L23.4 16.8999"
         stroke="url(#paint0_linear_447_40)"
-        stroke-width="2.6"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="2.6"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <path
         d="M26 10.3999H13C11.5641 10.3999 10.4 11.564 10.4 12.9999V25.9999C10.4 27.4358 11.5641 28.5999 13 28.5999H26C27.436 28.5999 28.6 27.4358 28.6 25.9999V12.9999C28.6 11.564 27.436 10.3999 26 10.3999Z"
         stroke="url(#paint1_linear_447_40)"
-        stroke-width="2.6"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="2.6"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <path
         d="M5.19998 20.8001C3.76998 20.8001 2.59998 19.6301 2.59998 18.2001V5.2001C2.59998 3.7701 3.76998 2.6001 5.19998 2.6001H18.2C19.63 2.6001 20.8 3.7701 20.8 5.2001"
         stroke="url(#paint2_linear_447_40)"
-        stroke-width="2.6"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="2.6"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <defs>
         <linearGradient

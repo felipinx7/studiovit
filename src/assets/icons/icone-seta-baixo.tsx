@@ -13,9 +13,9 @@ export function IconeSetBaixo({ className }: interfaceClasseIcone) {
       <path
         d="M12.6936 1.5L7.28686 7.2868L1.50005 1.88006"
         stroke="black"
-        stroke-width="3"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="3"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
     </svg>
   )

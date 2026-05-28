@@ -13,9 +13,9 @@ export function IconeMinimizar({ className }: interfaceClasseIcone) {
       <path
         d="M2 2H16"
         stroke="black"
-        stroke-width="4"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="4"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
     </svg>
   )
