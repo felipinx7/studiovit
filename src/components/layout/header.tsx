@@ -29,7 +29,7 @@ export function Header() {
 
       <header
         className={`fixed left-0 z-50 w-full transition-all duration-500 ${
-          isScrolledReal ? 'top-4 px-4' : 'top-0 px-0 bg-[#2A221E] backdrop-blur-2xl'
+          isScrolledReal ? 'top-4 px-4' : 'top-0 px-0 max-md:bg-[#2A221E] bg-transparent max-md:backdrop-blur-2xl'
         }`}
       >
         <div
